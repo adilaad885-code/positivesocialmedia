@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Positive Social Media Quote</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+
+<style>
+body {
+    margin: 0;
+    background: #d9b3ad;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Header */
+.header {
+    background: #d69c9a;
+    height: 220px;
+    border-bottom-left-radius: 60px;
+    border-bottom-right-radius: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header h1 {
+    color: white;
+    font-family: 'Playfair Display', serif;
+    font-size: 28px;
+    letter-spacing: 1px;
+}
+
+/* Main Card */
+.container {
+    display: flex;
+    justify-content: center;
+    margin-top: -60px;
+}
+
+.card {
+    background: #fffdf8;
+    width: 85%;
+    max-width: 700px;
+    padding: 40px;
+    border-radius: 25px;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+    text-align: center;
+    animation: fadeIn 1.2s ease;
+}
+
+.title {
+    font-family: 'Playfair Display', serif;
+    font-size: 22px;
+    color: #c46b6b;
+    margin-bottom: 10px;
+}
+
+.divider {
+    width: 60px;
+    height: 3px;
+    background: #c46b6b;
+    margin: 15px auto 25px;
+    border-radius: 10px;
+}
+
+.quote {
+    font-size: 18px;
+    line-height: 1.8;
+    color: #444;
+    padding: 10px 20px;
+}
+
+.footer {
+    margin-top: 30px;
+    font-size: 13px;
+    color: #999;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+</style>
+</head>
+
+<body>
+
+<div class="header">
+    <h1>Welcome ✨</h1>
+</div>
+
+<div class="container">
+    <div class="card">
+        <div class="title">Positive Social Media Quote</div>
+        <div class="divider"></div>
+        <div class="quote" id="quote"></div>
+        <div class="footer">Scan • Read • Reflect 💗</div>
+    </div>
+</div>
+
+<script>
+const quotes = [
+    "Use social media to spread kindness, not hate.",
+    "Think before you post—words can hurt.",
+    "Your online behavior reflects your character.",
+    "Share positivity, not negativity.",
+    "Be respectful, even when you disagree.",
+    "Social media is powerful—use it wisely.",
+    "Kindness is always trending.",
+    "Post with purpose, comment with care.",
+    "Choose empathy over arguments online.",
+    "Your words can inspire or destroy—choose wisely.",
+    "Make social media a safer space for everyone.",
+    "Spread information, not misinformation.",
+    "Use your voice online for good.",
+    "Respect differences in the digital world.",
+    "Likes fade, character stays."
+];
+
+// Random quote on load
+const randomIndex = Math.floor(Math.random() * quotes.length);
+document.getElementById("quote").innerText = quotes[randomIndex];
+</script>
+
+</body>
+</html>
